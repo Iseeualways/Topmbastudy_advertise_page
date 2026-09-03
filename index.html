@@ -817,7 +817,6 @@
             font-size: 14.5px;
             text-decoration: none;
             color: var(--n-navy) !important;
-            border-bottom: 1.5px solid var(--n-line);
             padding-bottom: 3px;
             transition: border-color .2s ease, color .2s ease, gap .2s ease;
         }
@@ -1230,12 +1229,37 @@
             line-height: 1.65;
         }
 
+        .aw2-mini-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .aw2-mini-card:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .aw2-field-card,
+.aw2-field-card:hover,
+.aw2-field-card:focus,
+.aw2-field-card:active {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.aw2-field-card h3,
+.aw2-field-card p {
+    text-decoration: none !important;
+}
+
         /* ================= DETAILED SERVICES (stacked list) ================= */
         .aw2-service-row {
             display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 48px;
-            padding: 40px 0;
+          
+            gap: 20px;
+            padding: 20px 0;
             border-top: 1px solid var(--n-line);
         }
 
@@ -1259,8 +1283,7 @@
         }
 
         .aw2-service-body p {
-            max-width: 1080px;
-            margin-bottom: 18px;
+            margin-bottom: 8px;
         }
 
         /* ================= FIELD MARKETING GRID ================= */
@@ -1522,14 +1545,20 @@
             <div class="aw2-container">
                 <div class="aw2-lead-grid">
                     <div>
-                        <h2 class="aw2-h2 mb-4" style="font-size: 40px; font-weight: 500; ">How Does It<br> <span style="font-weight: 700; color:#003556;font-size: 50px;">Benefit Your Institution?</span></h2>
-                        <p class="aw2-lead" style="font-size: 18px !important;">Students today discover and compare institutions across digital platforms
+                        <h2 class="aw2-h2 mb-4" style="font-size: 40px; font-weight: 500; ">How Does It<br> <span
+                                style="font-weight: 700; color:#003556;font-size: 50px;">Benefit Your
+                                Institution?</span></h2>
+                        <p class="aw2-lead" style="font-size: 18px !important;">Students today discover and compare
+                            institutions across digital platforms
                             while meaningful on ground engagement continues to play an important role in education
-                            marketing.<br><br> Now, how exactly does this take shape? Students engage with institutions at
+                            marketing.<br><br> Now, how exactly does this take shape? Students engage with institutions
+                            at
                             multiple touchpoints before making their decision from researching courses and fee
                             structures online to exploring campus experiences, attending education fairs and interacting
-                            with institutional representatives.<br><br> <span style="font-weight: 600; color: #003556;">TopMBAStudy can present your institution through two
-                            primary education marketing strategies:</span>
+                            with institutional representatives.<br><br> <span
+                                style="font-weight: 600; color: #003556;">TopMBAStudy can present your institution
+                                through two
+                                primary education marketing strategies:</span>
                         </p>
 
 
@@ -1607,26 +1636,37 @@
                 </div>
 
                 <div class="aw2-grid-6">
-                    <div class="aw2-mini-card">
-                        <div class="aw2-mini-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                    <a href="#lead-form" class="aw2-mini-card">
+                        <div class="aw2-mini-icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
                         <h3>SOCIAL MEDIA MARKETING</h3>
                         <p>Showcase your institution through engaging social media content.</p>
-                    </div>
-                    <div class="aw2-mini-card">
-                        <div class="aw2-mini-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-mini-card">
+                        <div class="aw2-mini-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
                         <h3>CONTENT MARKETING</h3>
                         <p>Build visibility through useful, institution focused content.</p>
-                    </div>
-                    <div class="aw2-mini-card">
-                        <div class="aw2-mini-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-mini-card">
+                        <div class="aw2-mini-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
                         <h3>PAY PER CLICK</h3>
                         <p>Reach students actively searching for colleges and courses.</p>
-                    </div>
-                    <div class="aw2-mini-card">
-                        <div class="aw2-mini-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-mini-card">
+                        <div class="aw2-mini-icon">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
                         <h3>DIRECT MARKETING</h3>
                         <p>Communicate relevant institutional information to interested students.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1732,45 +1772,56 @@
                 </div>
 
                 <div class="aw2-field-grid">
-                    <div class="aw2-field-card" id="expos">
-                        <div class="aw2-field-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <a href="#lead-form" class="aw2-field-card" id="expos">
+                        <div class="aw2-field-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
                         <h3>EXPOS AND EDUCATIONAL FAIRS</h3>
                         <p>Create direct opportunities to interact with students and build institutional connections.
                         </p>
-                    </div>
-                    <div class="aw2-field-card" id="print-media">
-                        <div class="aw2-field-icon"><i class="fa-solid fa-newspaper"></i></div>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-field-card" id="print-media">
+                        <div class="aw2-field-icon">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
                         <h3>PRINT MEDIA ADVERTISING</h3>
-                        <p>Use newspapers, magazines, brochures, and other relevant print formats.
-                        </p>
-                    </div>
-                    <div class="aw2-field-card" id="transit">
-                        <div class="aw2-field-icon"><i class="fa-solid fa-bus"></i></div>
+                        <p>Use newspapers, magazines, brochures, and other relevant print formats.</p>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-field-card" id="transit">
+                        <div class="aw2-field-icon">
+                            <i class="fa-solid fa-bus"></i>
+                        </div>
                         <h3>TRANSIT ADVERTISING</h3>
-                        <p>Build wider geographical visibility through selected public transportation touchpoints.
-                        </p>
-                    </div>
-                    <div class="aw2-field-card" id="influencer">
-                        <div class="aw2-field-icon"><i class="fa-solid fa-star"></i></div>
+                        <p>Build wider geographical visibility through selected public transportation touchpoints.</p>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-field-card" id="influencer">
+                        <div class="aw2-field-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
                         <h3>INFLUENCER MARKETING</h3>
-                        <p>Work with relevant creators, bloggers, industry experts, and education voices.
-                        </p>
-                    </div>
-                    <div class="aw2-field-card" id="collaborations">
-                        <div class="aw2-field-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <p>Work with relevant creators, bloggers, industry experts, and education voices.</p>
+                    </a>
+
+                    <a href="#lead-form" class="aw2-field-card" id="collaborations">
+                        <div class="aw2-field-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
                         <h3>COLLABORATIONS WITH LOCAL INSTITUTES</h3>
                         <p>Explore academic and promotional collaborations with educational institutions and
-                            communities.
+                            communities.</p>
+                    </a>
 
-                        </p>
-                    </div>
-                    <div class="aw2-field-card" id="survey">
-                        <div class="aw2-field-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <a href="#lead-form" class="aw2-field-card" id="survey">
+                        <div class="aw2-field-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
                         <h3>TARGETED SURVEY ANALYSIS</h3>
                         <p>Gather audience insights and feedback to understand student preferences and improve
-                            campaigns.
-                        </p>
-                    </div>
+                            campaigns.</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1895,7 +1946,7 @@
                     opportunities across India. This creates an education focused environment in which institutions can
                     present their programmes to prospective students.
                 </p>
-                <a href="#lead-form" class="aw2-btn aw2-btn-primary">Partner with TopMBAStudy</a>
+                <a href="#lead-form" class="aw2-btn aw2-btn-primary">PARTNER WITH TopMBAStudy</a>
             </div>
         </section>
 
