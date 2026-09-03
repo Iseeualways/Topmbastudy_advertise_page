@@ -87,6 +87,7 @@
             font-family: "Poppins" !important;
             color: var(--paper);
             background: var(--ink);
+            overflow-x: hidden;
         }
 
         .infobar {
@@ -236,7 +237,7 @@
         </div>
 
         <style>
-            /* Flowing gradient + pulsing glow + soft grow/shrink */
+  
             .pulse-text {
                 position: relative;
                 font-weight: 700;
@@ -263,7 +264,7 @@
                 display: inline-block;
             }
 
-            /* Gradient flowing animation */
+
             @keyframes highlightFlow {
                 0% {
                     background-position: 200% center;
@@ -278,7 +279,7 @@
                 }
             }
 
-            /* Soft glowing pulse */
+  
             @keyframes pulseGlow {
                 0% {
                     filter: brightness(0.9) drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
@@ -293,7 +294,7 @@
                 }
             }
 
-            /* Gentle size pulse (grow and shrink) */
+          
             @keyframes pulseScale {
                 0% {
                     transform: scale(1);
@@ -518,9 +519,7 @@
             </nav>
 
             <style>
-                /* --------------------
-   Base Setup
--------------------- */
+         
 
 
                 .spec-grid img {
@@ -529,9 +528,6 @@
                     border-radius: 20px;
                 }
 
-                /* --------------------
-   Navigation & Dropdown Base
--------------------- */
                 nav {
                     display: flex;
                     justify-content: center;
@@ -571,9 +567,6 @@
                     pointer-events: auto;
                 }
 
-                /* --------------------
-   Headings
--------------------- */
                 .dropdown-content h4,
                 .dropdown-column h4 {
                     color: var(--orange);
@@ -582,9 +575,6 @@
                     margin-bottom: 10px;
                 }
 
-                /* --------------------
-   Dropdown Links with Arrow Animation
--------------------- */
                 .dropdown-content a,
                 .dropdown-column a {
                     position: relative;
@@ -601,7 +591,7 @@
                     transform: translateX(0);
                 }
 
-                /* Hidden arrow before hover */
+     
                 .dropdown-content a::before,
                 .dropdown-column a::before {
                     content: "\f101";
@@ -616,7 +606,6 @@
 
                 }
 
-                /* On hover: arrow appears and moves right, text slides a bit */
                 .dropdown-content a:hover,
                 .dropdown-column a:hover {
                     color: #002147;
@@ -630,9 +619,6 @@
                     transform: translateX(0);
                 }
 
-                /* --------------------
-   View More Button
--------------------- */
                 .dropdown-content .view-more {
                     display: inline-block;
                     color: rgb(0, 76, 114);
@@ -642,9 +628,6 @@
                     transition: background 0.3s ease;
                 }
 
-                /* --------------------
-   Layout Variants
--------------------- */
                 .spec-grid {
                     min-width: 380px;
                 }
@@ -661,9 +644,6 @@
                     columns: 2;
                 }
 
-                /* --------------------
-   Dropdown Fade Animation
--------------------- */
                 @keyframes fadeIn {
                     from {
                         opacity: 0;
@@ -681,15 +661,8 @@
 
         </div>
     </header>
-
-    <!-- =========================================================
-         REDESIGNED INNER CONTENT
-         Design system: flat bordered components, no gradients, no
-         pill radii, no heavy shadows. Fraunces for display headings,
-         Poppins for UI/body (matches the existing navbar/footer).
-    ========================================================= -->
     <style>
-        /* ---------- Design tokens (additive; header/footer untouched) ---------- */
+  
         :root {
             --n-navy: #0a2540;
             --n-navy-2: #123256;
@@ -698,7 +671,7 @@
             --n-line: #e2e8ef;
             --n-line-dark: rgba(255, 255, 255, .16);
             --n-text: #1c2b3a;
-            --n-muted: #57677a;
+            --n-muted: #313942;
             --n-muted-light: rgba(255, 255, 255, .72);
             --n-radius-s: 4px;
             --n-radius-m: 8px;
@@ -746,7 +719,7 @@
         }
 
         .aw2-section {
-            padding: 38px 0;
+            padding: 18px 0;
         }
 
 
@@ -777,7 +750,7 @@
         }
 
         .aw2-lead {
-            max-width: 640px;
+            max-width: 1240px;
             font-size: 16.5px !important;
             color: var(--n-muted) !important;
             line-height: 1.75;
@@ -794,7 +767,6 @@
             text-align: center;
         }
 
-        /* ---------- Buttons ---------- */
         .aw2-btn {
             display: inline-flex;
             align-items: center;
@@ -811,7 +783,7 @@
         }
 
         .aw2-btn-primary {
-            background: var(--orange);
+            background: var(--blue);
             color: #fff !important;
         }
 
@@ -821,13 +793,13 @@
         }
 
         .aw2-btn-ghost-light {
-            border-color: rgba(255, 255, 255, .4);
-            color: #fff !important;
+            border-color: rgba(178, 178, 178, 0.649);
+            color: #2d2d2d !important;
             background: transparent;
         }
 
         .aw2-btn-ghost-light:hover {
-            border-color: #fff;
+            border-color: #363535;
             background: rgba(255, 255, 255, .08);
         }
 
@@ -877,7 +849,7 @@
 
         .aw2-hero-grid {
             display: grid;
-            grid-template-columns: 1.05fr 0.95fr;
+            grid-template-columns: 60% 1fr;
             align-items: center;
             gap: 56px;
         }
@@ -897,7 +869,7 @@
 
         .aw2-hero h1 {
             color: #fff;
-            font-size: clamp(38px, 4.6vw, 58px);
+            font-size: clamp(38px, 4.6vw, 48px);
             font-weight: 500;
             line-height: 1.08;
             margin-bottom: 22px;
@@ -1013,7 +985,7 @@
             border: 2px solid var(--n-line);
             border-radius: var(--n-radius-m);
             padding: 16px 32px;
-            background: #f6f7f7;
+            background: #f5e9dd40;
             box-shadow: 0 5px 6px rgba(0, 0, 0, 0.155);
         }
 
@@ -1034,11 +1006,11 @@
             height: 40px;
             padding: 7px 14px;
             background: #fff;
-            border: 1px solid var(--n-line);
+            border: 1px solid rgb(210, 210, 210);
             border-radius: var(--n-radius-s);
             color: var(--n-text);
             font-family: "Poppins", sans-serif;
-            font-size: 15px;
+            font-size: 16px;
             outline: none;
             transition: border-color .2s ease, box-shadow .2s ease;
         }
@@ -1109,7 +1081,7 @@
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            margin: 2px 0 24px;
+            margin: 2px 0 14px;
         }
 
         .aw2-check-row input {
@@ -1215,7 +1187,7 @@
         /* ================= OVERVIEW CARDS (digital) ================= */
         .aw2-grid-6 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1px;
             background: var(--n-line);
             border: 1px solid var(--n-line);
@@ -1229,9 +1201,9 @@
             transition: background .2s ease;
         }
 
-          .aw2-mini-card:nth-child(even) {
-    background: #eef7fc;
-}
+        .aw2-mini-card:nth-child(even) {
+            background: #eef7fc;
+        }
 
         .aw2-mini-card:hover {
             background: var(--n-mist);
@@ -1344,6 +1316,10 @@
         /* ================= WHY IT WORKS ================= */
         .aw2-why {
             background: var(--n-navy);
+            background-image: linear-gradient(90deg, rgb(10, 28, 52), rgba(10, 28, 52, 0.401)), url("advertise_bg2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .aw2-why .aw2-eyebrow {
@@ -1405,7 +1381,7 @@
         }
 
         .aw2-cta .aw2-lead {
-            max-width: 760px;
+            max-width: 1260px;
             margin: 0 auto 30px;
             font-size: 17px !important;
         }
@@ -1480,10 +1456,6 @@
     </style>
 
     <div class="aw2">
-
-        <!-- =========================================================
-             HERO
-        ========================================================= -->
         <section class="aw2-hero">
             <div class="aw2-container">
                 <div class="aw2-hero-grid">
@@ -1494,10 +1466,7 @@
                             admissions criteria, scholarships, and career outcomes in one place. On the other
                             side, we connect colleges and universities offering management courses directly to
                             a pool of students actively searching for exactly that.</p>
-                        <div class="aw2-hero-actions">
-                            <a href="#lead-form" class="aw2-btn aw2-btn-primary">Get started</a>
-                            <a href="#digital-marketing" class="aw2-btn aw2-btn-ghost-light">See how it works</a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1528,14 +1497,12 @@
                 align-items: center;
                 justify-content: flex-start;
                 gap: 8px;
-
                 width: 100%;
                 max-width: 100%;
                 margin: 0;
-                padding: 14px 20px;
+                padding: 4px 90px;
                 box-sizing: border-box;
-
-                font-size: 14px;
+                font-size: 16px;
                 text-align: left;
             }
 
@@ -1546,7 +1513,7 @@
 
             .aw2-crumb i {
                 flex-shrink: 0;
-                font-size: 9px;
+                font-size: 10px;
                 color: #999;
             }
 
@@ -1556,52 +1523,48 @@
             }
         </style>
 
-
-        <!-- =========================================================
-             LEAD GENERATION
-        ========================================================= -->
-        <section class="aw2-section" id="lead-form">
+        <section class="aw2-section mt-5" id="lead-form">
             <div class="aw2-container">
                 <div class="aw2-lead-grid">
                     <div>
-                        <h2 class="aw2-h2 mb-4">Generate qualified student leads with ease</h2>
-                        <p class="aw2-lead mb-5">Tell us a little about your institution and what you're looking to
-                            promote. Our team will get back to you with a plan built around your programmes and
-                            audience.</p>
-                        <ul class="aw2-checklist">
-                            <li><span class="aw2-checkmark"><i class="fa-solid fa-check"></i></span> Reach students
-                                actively comparing colleges</li>
-                            <li><span class="aw2-checkmark"><i class="fa-solid fa-check"></i></span> Choose digital,
-                                on-ground, or both</li>
-                            <li><span class="aw2-checkmark"><i class="fa-solid fa-check"></i></span> No obligation,
-                                just a conversation</li>
-                        </ul>
+                        <h2 class="aw2-h2 mb-4" style="font-size: 50px;">How Does It<br> Benefit Your Institution?</h2>
+                        <p class="aw2-lead">Students today discover and compare institutions across digital platforms,
+                            while meaningful on ground engagement continues to play an important role in education
+                            marketing.<br> TopMBAStudy can present your institution through two primary education
+                            marketing
+                            strategies:
+
+                        </p>
+
+
                     </div>
 
                     <form class="aw2-form-card">
-                        <h3 class="text-center mb-3">Connect with us</h3>
+                        <h3 class="text-center mb-0">Get Started</h3>
+                        <p class="text-center mb-3">Generate Qualified Student Leads With Ease
+                        </p>
                         <div class="aw2-field" style="display:flex; gap:12px; align-items:stretch;">
-                            <input type="text" id="aw2-name" class="aw2-input" placeholder="Enter your full name"
-                                required style="flex:1; min-width:0;">
+                            <input type="text" id="aw2-name" class="aw2-input" placeholder="Full Name" required
+                                style="flex:1; min-width:0;">
                             <div class="aw2-phone" style="flex:1; min-width:0;">
-                                <span class="cc">🇮🇳 <small>▼</small></span>
                                 <span class="prefix">+91</span>
                                 <input type="tel" id="aw2-phone" required>
                             </div>
                         </div>
 
-                        <div class="aw2-field">
-                            <input type="email" id="aw2-email" class="aw2-input" placeholder="you@institution.edu"
-                                required>
+                        <div class="aw2-field" style="display:flex; gap:12px; align-items:stretch;">
+                            <input type="text" id="aw2-name" class="aw2-input" placeholder="Email ID" required
+                                style="flex:1; min-width:0;">
+                            <input type="text" id="aw2-name" class="aw2-input" placeholder="Phone No. " required
+                                style="flex:1; min-width:0;">
                         </div>
 
                         <div class="aw2-field">
-                            <input type="text" id="aw2-location" class="aw2-input" placeholder="City, state" required>
+                            <input type="text" id="aw2-location" class="aw2-input" placeholder="Designation" required>
                         </div>
 
                         <div class="aw2-field" style="margin-bottom:0;">
-                            <textarea id="aw2-message" class="aw2-textarea" placeholder="Tell us about your institution"
-                                rows="1"></textarea>
+                            <textarea id="aw2-message" class="aw2-textarea" placeholder="Location" rows="1"></textarea>
                         </div>
 
                         <div class="aw2-check-row">
@@ -1610,7 +1573,7 @@
                                 <a href="#">Terms &amp; Conditions</a></label>
                         </div>
 
-                        <button type="submit" class="aw2-submit">Send enquiry</button>
+                        <button type="submit" class="aw2-submit">Advertise With Us</button>
                     </form>
                 </div>
             </div>
@@ -1619,18 +1582,13 @@
         <!-- =========================================================
              WHY PARTNER + TABS
         ========================================================= -->
-        <section class="aw2-section" style="padding-bottom: 0;">
+        <section class="aw2-section mb-4" style="padding-bottom: 0;">
             <div class="aw2-container">
-
-                <h2 class="aw2-h2">How does it benefit your institution?</h2>
-                <p class="aw2-lead">Students today discover and compare institutions across digital platforms,
-                    while meaningful on-ground engagement continues to play an important role in education
-                    marketing. We present your institution through two primary education marketing strategies.</p>
                 <div class="aw2-tabbar">
                     <a href="#digital-marketing" class="aw2-tab is-primary"><i class="fa-solid fa-display"></i>
-                        Digital marketing activities</a>
-                    <a href="#field-marketing" class="aw2-tab"><i class="fa-solid fa-people-group"></i> Field
-                        marketing initiatives</a>
+                        DIGITAL MARKETING ACTIVITIES</a>
+                    <a href="#field-marketing" class="aw2-tab"><i class="fa-solid fa-people-group"></i> FIELD MARKETING
+                        INITIATIVES</a>
                 </div>
             </div>
         </section>
@@ -1638,45 +1596,35 @@
         <!-- =========================================================
              DIGITAL MARKETING — overview
         ========================================================= -->
-        <section class="aw2-section" id="digital-marketing">
+        <section class="aw2-section mb-4" id="digital-marketing">
             <div class="aw2-container">
-                <div class="aw2-head aw2-center">
+                <div class="text-center aw2-center">
 
-                    <h2 class="aw2-h2">Digital marketing activities</h2>
-                    <p class="aw2-lead" style="margin: 0 auto;">Digital marketing for educational institutions can
+                    <h2 class="aw2-h2 mb-2">Digital Marketing Activities</h2>
+                    <p class="aw2-lead mb-5" style="margin: 0 auto;">Digital marketing for educational institutions can
                         be carried out through a range of activities. Some of them include:</p>
                 </div>
 
                 <div class="aw2-grid-6">
                     <div class="aw2-mini-card">
                         <div class="aw2-mini-icon"><i class="fa-solid fa-share-nodes"></i></div>
-                        <h3>Social media marketing</h3>
+                        <h3>SOCIAL MEDIA MARKETING</h3>
                         <p>Showcase your institution through engaging social media content.</p>
                     </div>
                     <div class="aw2-mini-card">
                         <div class="aw2-mini-icon"><i class="fa-solid fa-pen-nib"></i></div>
-                        <h3>Content marketing</h3>
-                        <p>Build visibility through useful, institution-focused content.</p>
+                        <h3>CONTENT MARKETING</h3>
+                        <p>Build visibility through useful, institution focused content.</p>
                     </div>
                     <div class="aw2-mini-card">
                         <div class="aw2-mini-icon"><i class="fa-solid fa-bullseye"></i></div>
-                        <h3>Pay per click (PPC)</h3>
+                        <h3>PAY PER CLICK</h3>
                         <p>Reach students actively searching for colleges and courses.</p>
                     </div>
                     <div class="aw2-mini-card">
                         <div class="aw2-mini-icon"><i class="fa-solid fa-paper-plane"></i></div>
-                        <h3>Direct marketing</h3>
+                        <h3>DIRECT MARKETING</h3>
                         <p>Communicate relevant institutional information to interested students.</p>
-                    </div>
-                    <div class="aw2-mini-card">
-                        <div class="aw2-mini-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <h3>Search engine marketing</h3>
-                        <p>Reach students at the moment they're searching for programmes.</p>
-                    </div>
-                    <div class="aw2-mini-card">
-                        <div class="aw2-mini-icon"><i class="fa-solid fa-panorama"></i></div>
-                        <h3>Display advertising</h3>
-                        <p>Build visibility with visual creatives across relevant platforms.</p>
                     </div>
                 </div>
             </div>
@@ -1691,122 +1639,216 @@
                 <div class="aw2-service-row" id="social-media">
                     <div>
                         <p class="idx">01</p>
-                        <h3>Social media marketing</h3>
+                        <h3>Social Media Marketing:</h3>
                     </div>
                     <div class="aw2-service-body">
-                        <p>The social media marketing services rendered through TopMBAStudy can be designed to
-                            showcase the distinct features of your institution. We use platforms such as
-                            Instagram, Facebook, YouTube, and other relevant channels to bring your institution's
-                            strengths to prospective students.</p>
-                        <p>This can include customised Instagram reels highlighting campus facilities, academic
-                            achievements, student experiences, events, programmes, and other features that help
-                            students understand what makes your institution different. Well-curated YouTube
-                            videos can also provide a closer look at campus life, academic programmes, facilities,
-                            student experiences, and the overall institution to the right audience at the right
-                            time.</p>
-                        <a href="#" class="aw2-text-link">Enquire about social media marketing <span>&#8599;</span></a>
+                        <p>The social media marketing services rendered through TopMBAStudy can be designed to showcase
+                            the distinct features of your institution. We can use platforms such as Instagram, Facebook,
+                            YouTube, and other relevant channels to bring your institution's strengths to prospective
+                            students.
+                            <br><br>
+                            This can include customised Instagram reels highlighting campus facilities, academic
+                            achievements, student experiences, events, programmes, and other features that help students
+                            understand what makes your institution different.
+                            <br><br>
+                            Well curated YouTube videos can also provide a closer look at campus life, academic
+                            programmes, facilities, student experiences, and the overall institution to the right
+                            audience at the right time.
+                        </p>
+                        <a href="#" class="aw2-text-link">ENQUIRE ABOUT SOCIAL MEDIA MARKETING <span>&#8599;</span></a>
                     </div>
                 </div>
 
                 <div class="aw2-service-row" id="content-marketing">
                     <div>
                         <p class="idx">02</p>
-                        <h3>Content marketing</h3>
+                        <h3>Content Marketing:</h3>
                     </div>
                     <div class="aw2-service-body">
-                        <p>Students spend significant time researching colleges and courses before making an
-                            academic decision. TopMBAStudy helps ensure your institution becomes part of that
-                            research journey through a range of content formats.</p>
-                        <p>Our primary content marketing strategies include institution-specific profiles, blogs,
-                            articles, admission-focused content, course-related guides, customised infographics,
-                            images, social posts, reviews, testimonials, quizzes, polls, and other interactive
-                            formats — presenting useful information in an easy-to-understand format while
-                            strengthening your institution's online visibility.</p>
-                        <a href="#" class="aw2-text-link">Discuss content marketing <span>&#8599;</span></a>
+                        <p>Students spend significant time researching colleges and courses before making an academic
+                            decision. TopMBAStudy can help ensure that your institution becomes part of that research
+                            journey through a range of content formats.
+                        </p>
+                        <p>Some of our primary content marketing strategies can include institution specific profiles,
+                            blogs, articles, admission focused content, course related guides, customised infographics,
+                            images, social posts, reviews, testimonials, quizzes, polls, and other interactive formats.
+                        </p>
+                        <p>The objective is to present useful information in an easy to understand format while
+                            strengthening your institution's online visibility and helping prospective students discover
+                            its distinctive features.
+                        </p>
+                        <a href="#" class="aw2-text-link">DISCUSS CONTENT MARKETING <span>&#8599;</span></a>
                     </div>
                 </div>
 
                 <div class="aw2-service-row" id="ppc">
                     <div>
                         <p class="idx">03</p>
-                        <h3>Pay per click (PPC)</h3>
+                        <h3>Pay Per Click (PPC):</h3>
                     </div>
                     <div class="aw2-service-body">
-                        <p>Targeted paid advertising helps institutions reach students actively searching for
-                            relevant colleges, courses, admissions, and academic opportunities.</p>
-                        <p>Campaign performance is monitored through measurable indicators such as clicks,
-                            enquiries, conversions, and audience response, and campaigns can be adjusted based on
+                        <p>Targeted paid advertising can help institutions reach students actively searching for
+                            relevant colleges, courses, admissions, and academic opportunities.
+                        </p>
+                        <p>Campaign performance can be monitored through measurable indicators such as clicks,
+                            enquiries, conversions, and audience response. Campaigns can also be adjusted based on
                             performance to improve reach and lead generation.</p>
-                        <a href="#" class="aw2-text-link">Start a PPC campaign <span>&#8599;</span></a>
+                        <a href="#" class="aw2-text-link">START A PPC CAMPAIGN <span>&#8599;</span></a>
                     </div>
                 </div>
 
                 <div class="aw2-service-row" id="direct-marketing">
                     <div>
                         <p class="idx">04</p>
-                        <h3>Direct marketing</h3>
+                        <h3>Direct Marketing:</h3>
                     </div>
                     <div class="aw2-service-body">
-                        <p>Direct marketing helps institutions communicate important information to specific
+                        <p>Direct marketing can help institutions communicate important information to specific
                             audiences through channels such as WhatsApp outreach and targeted email campaigns.</p>
-                        <p>These methods support personalised engagement, strengthen communication with
-                            prospective students, and help institutions share relevant information about
-                            programmes, admissions, events, and other opportunities.</p>
-                        <a href="#" class="aw2-text-link">Explore direct marketing <span>&#8599;</span></a>
+                        <p>These methods can support personalised engagement, strengthen communication with prospective
+                            students, and help institutions share relevant information about programmes, admissions,
+                            events, and other opportunities.</p>
+                        <a href="#" class="aw2-text-link">EXPLORE DIRECT MARKETING <span>&#8599;</span></a>
                     </div>
                 </div>
             </div>
         </section>
 
+
+
+
         <!-- =========================================================
              FIELD MARKETING
         ========================================================= -->
-        <section class="aw2-section" id="field-marketing">
+        <section class="aw2-section mb-4" id="field-marketing">
             <div class="aw2-container">
-                <div class="aw2-head aw2-center">
+                <div class="text-center aw2-center">
 
-                    <h2 class="aw2-h2">Field marketing initiatives</h2>
-                    <p class="aw2-lead" style="margin: 0 auto;">Some of the on-field educational advertising
-                        strategies that can strengthen your institution's brand recognition include:</p>
+                    <h2 class="aw2-h2 mb-2">Field Marketing Initiatives</h2>
+                    <p class="aw2-lead mb-5" style="margin: 0 auto;">Some of the on field educational advertising
+                        strategies that can be used to strengthen your institution's brand recognition include:
+                    </p>
                 </div>
 
                 <div class="aw2-field-grid">
                     <div class="aw2-field-card" id="expos">
                         <div class="aw2-field-icon"><i class="fa-solid fa-people-group"></i></div>
-                        <h3>Expos & educational fairs</h3>
+                        <h3>EXPOS AND EDUCATIONAL FAIRS</h3>
                         <p>Create direct opportunities to interact with students and build institutional connections.
                         </p>
                     </div>
                     <div class="aw2-field-card" id="print-media">
                         <div class="aw2-field-icon"><i class="fa-solid fa-newspaper"></i></div>
-                        <h3>Print media advertising</h3>
+                        <h3>PRINT MEDIA ADVERTISING</h3>
                         <p>Use newspapers, magazines, brochures, and other relevant print formats.
                         </p>
                     </div>
                     <div class="aw2-field-card" id="transit">
                         <div class="aw2-field-icon"><i class="fa-solid fa-bus"></i></div>
-                        <h3>Transit advertising</h3>
+                        <h3>TRANSIT ADVERTISING</h3>
                         <p>Build wider geographical visibility through selected public transportation touchpoints.
                         </p>
                     </div>
                     <div class="aw2-field-card" id="influencer">
                         <div class="aw2-field-icon"><i class="fa-solid fa-star"></i></div>
-                        <h3>Influencer marketing</h3>
+                        <h3>INFLUENCER MARKETING</h3>
                         <p>Work with relevant creators, bloggers, industry experts, and education voices.
                         </p>
                     </div>
                     <div class="aw2-field-card" id="collaborations">
                         <div class="aw2-field-icon"><i class="fa-solid fa-handshake"></i></div>
-                        <h3>Collaborations with local institutes</h3>
+                        <h3>COLLABORATIONS WITH LOCAL INSTITUTES</h3>
                         <p>Explore academic and promotional collaborations with educational institutions and
                             communities.
+
                         </p>
                     </div>
                     <div class="aw2-field-card" id="survey">
                         <div class="aw2-field-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3>Targeted survey analysis</h3>
+                        <h3>TARGETED SURVEY ANALYSIS</h3>
                         <p>Gather audience insights and feedback to understand student preferences and improve
                             campaigns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="aw2-section" style="padding-top: 0;">
+            <div class="aw2-container">
+                <div class="aw2-service-row" id="social-media">
+                    <div>
+                        <p class="idx">05</p>
+                        <h3>Expos and Educational Fairs:</h3>
+                    </div>
+                    <div class="aw2-service-body">
+                        <p>Educational fairs, exhibitions, seminars, and student focused events can provide an
+                            opportunity for institutions to directly interact with prospective students and strengthen
+                            their presence within the education community.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aw2-service-row" id="content-marketing">
+                    <div>
+                        <p class="idx">06</p>
+                        <h3>Print Media Advertising:</h3>
+                    </div>
+                    <div class="aw2-service-body">
+                        <p>Newspapers, magazines, brochures, and other print formats continue to provide opportunities
+                            for institutions to build awareness among relevant local audiences. Print campaigns can be
+                            planned around institution, programme, admission, or event focused communication.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aw2-service-row" id="ppc">
+                    <div>
+                        <p class="idx">07</p>
+                        <h3>Transit Advertising:</h3>
+                    </div>
+                    <div class="aw2-service-body">
+                        <p>Transit advertising can provide geographical flexibility and broad audience visibility by
+                            placing institutional messaging across selected public transportation touchpoints.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aw2-service-row" id="direct-marketing">
+                    <div>
+                        <p class="idx">08</p>
+                        <h3>Influencer Marketing:</h3>
+                    </div>
+                    <div class="aw2-service-body">
+                        <p>Relevant social media personalities, bloggers, industry experts, and education voices can
+                            help institutions communicate their strengths through a more relatable and authentic format.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aw2-service-row" id="direct-marketing">
+                    <div>
+                        <p class="idx">09</p>
+                        <h3>Collaborations with Local Institutes:</h3>
+                    </div>
+                    <div class="aw2-service-body">
+                        <p>Academic and promotional collaborations with schools, colleges, training institutions, and
+                            other educational communities can help extend an institution's reach and create meaningful
+                            connections with prospective students.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aw2-service-row" id="direct-marketing">
+                    <div>
+                        <p class="idx">10</p>
+                        <h3>Targeted Survey Analysis:</h3>
+                    </div>
+                    <div class="aw2-service-body">
+                        <p>Student feedback can help institutions understand audience preferences, interests, and areas
+                            of improvement. Survey based insights can support better campaign planning and help track
+                            engagement, website traffic, enquiry patterns, and other performance indicators.
                         </p>
                     </div>
                 </div>
@@ -1823,16 +1865,21 @@
                 <p class="aw2-why-lead">By combining digital visibility with targeted outreach and on-ground
                     engagement, TopMBAStudy helps institutions:</p>
                 <ul class="aw2-why-list">
-                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Increase brand
-                        awareness among relevant student audiences</li>
-                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Reach students
-                        researching colleges and courses across India</li>
+                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Increase brand awareness
+                        among relevant student audiences
+                    </li>
+                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Reach students researching
+                        colleges and courses in India
+                    </li>
                     <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Showcase programmes,
-                        facilities, achievements, and campus experience</li>
-                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Generate relevant
-                        student enquiries</li>
-                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Strengthen the
-                        admission pipeline</li>
+                        facilities, achievements, and campus experience
+                    </li>
+                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Generate relevant student
+                        enquiries
+                    </li>
+                    <li><span class="aw2-why-mark"><i class="fa-solid fa-check"></i></span> Strengthen the admission
+                        pipeline
+                    </li>
                 </ul>
             </div>
         </section>
@@ -1842,10 +1889,11 @@
         ========================================================= -->
         <section class="aw2-cta">
             <div class="aw2-container">
-                <p class="aw2-lead" style="margin: 0 auto 30px;">TopMBAStudy is built around the student
-                    discovery journey, with content spanning colleges, courses, scholarships, admissions, exams,
-                    and career opportunities across India — an education-focused environment in which
-                    institutions can present their programmes to prospective students.</p>
+                <p class="aw2-lead" style="margin: 0 auto 30px;">TopMBAStudy is positioned around the student discovery
+                    journey, with content spanning colleges, courses, scholarships, admissions, exams, and career
+                    opportunities across India. This creates an education focused environment in which institutions can
+                    present their programmes to prospective students.
+                </p>
                 <a href="#lead-form" class="aw2-btn aw2-btn-primary">Partner with TopMBAStudy</a>
             </div>
         </section>
@@ -1957,7 +2005,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </footer>
 
@@ -2094,7 +2141,6 @@
     </style>
 
     <!-- =======================================================scripts below -->
-
     <!-- Bootstrap 5.3.3 JS Bundle (with Popper) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
